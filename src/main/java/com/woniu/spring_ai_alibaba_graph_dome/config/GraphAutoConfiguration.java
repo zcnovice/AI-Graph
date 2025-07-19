@@ -148,8 +148,13 @@ public class GraphAutoConfiguration {
                 // 图的结束节点
                 .addEdge("recorder", END);
 
+        /*使用stateGraph.getGraph()方法生成工作流的图形表示
+            GraphRepresentation.Type.PLANTUML指定使用PlantUML格式来生成图形
+            "workflow graph"是给这个图形起的名称*/
         GraphRepresentation graphRepresentation = stateGraph.getGraph(GraphRepresentation.Type.PLANTUML,
                 "workflow graph");
+
+
 
         System.out.println("\n\n");
         System.out.println(graphRepresentation.content());
