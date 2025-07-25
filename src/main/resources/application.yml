@@ -1,0 +1,9 @@
+#spring.application.name=Spring_AI_Alibaba_Graph_Dome
+
+#??AI
+
+spring:
+  ai:
+    dashscope:
+      api-key: 你的API-KEY
+
