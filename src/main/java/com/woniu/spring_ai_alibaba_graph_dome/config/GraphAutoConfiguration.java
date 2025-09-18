@@ -100,6 +100,7 @@ public class GraphAutoConfiguration {
 
         /* 与上面相似 */
         // 负面评价具体问题分类节点
+        /* QuestionClassifierNode是Alibaba Cloud AI Graph 框架中的一个核心节点类，主要用于实现问题分类功能 */
         QuestionClassifierNode specificQuestionClassifier = QuestionClassifierNode.builder()
                 .chatClient(chatClient)
                 .inputTextKey("input")

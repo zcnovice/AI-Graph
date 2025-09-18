@@ -31,9 +31,10 @@ public class HelloworldController {
                 .build();
     }
  
-    /**
-     * ChatClient 简单调用
-     */
+/**
+     * ChatClient 简单调用*/
+
+
     @GetMapping("/simple/chat")
     public String simpleChat(@RequestParam(value = "query", defaultValue = "你好，很高兴认识你，能简单介绍一下自己吗？")String query) {
  
